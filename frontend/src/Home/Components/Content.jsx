@@ -1,6 +1,7 @@
 import React from 'react'
 import CardOne from './CardOne'
 import CardTwo from './CardTwo'
+import PlantCard from './PlantCards/PlantCard'
 
 function Content() {
   return (
@@ -70,6 +71,59 @@ function Content() {
                 </div>
                 </CardOne>
 
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div className='flex justify-center items-center lg:mt-20'>
+                <div className='flex relative'>
+                    <div className='pt-3 absolute lg:pt-5'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 66" fill="none">
+                        <path opacity="0.5" d="M2.5 0V43.5C2.5 54.5457 11.4543 63.5 22.5 63.5H64"
+                            stroke="url(#grad)" stroke-width="5"/>
+                        <defs>
+                            <linearGradient id="grad" x1="0" y1="2.5" x2="68.5" y2="71.5" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FBD300"/>
+                            <stop offset="1" stop-color="white"/>
+                            </linearGradient>
+                        </defs>
+                        </svg>
+
+                    </div>
+                    <h1 className='text-white text-2xl font-semibold px-2 py-2 lg:text-4xl'>Our Trendy plants</h1>
+                    <div className='pt-2 absolute right-0 lg:top-1'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 66" fill="none">
+                        <path opacity="0.5" d="M61.5 65.5V22.5C61.5 11.4543 52.5457 2.50001 41.5 2.50001L1.09971e-05 2.50001" stroke="url(#paint0_linear_11_52)" stroke-width="5"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_11_52" x1="0.500012" y1="2.50001" x2="68.5" y2="71.5" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FBD300"/>
+                        <stop offset="1" stop-color="white"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div className='px-6 py-10'>
+                    <PlantCard 
+                    reverse={false}
+                    title="For Your Desks Decorations"
+                    description="I recently added a beautiful desk decoration plant to my workspace, and it has made such a positive difference!"
+                    price={599}
+                    image="/plantone.png"
+                    />
+                </div>
+
+                <div className='px-6 py-10'>
+                    <PlantCard 
+                    reverse={true}
+                    title="For Your Desks Decorations"
+                    description="The greenery adds a touch of nature and serenity to my desk, making it feel more inviting and calming"
+                    price={399}
+                    image="/planttwo.png"
+                    />
                 </div>
             </div>
         </div>

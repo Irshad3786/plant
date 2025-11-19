@@ -16,10 +16,10 @@ function Home() {
       </div>
 
       <div className='bg-[#1B2316] w-full h-screen over'>
-
+        
       </div>
-</div>
-    </>
+    </div>
+    </> 
   )
 }
 
