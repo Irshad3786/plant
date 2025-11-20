@@ -6,18 +6,18 @@ function Home() {
   return (
     <>
     <div>
-      <div className="relative">
-        <img src="./background.jpg" alt="" className="w-full h-auto" />
+        <div className='relative'>
+          <img src="./background.jpg" alt="" className="w-full h-auto" />
+          <div className='bg-[#1B2316] w-full min-h-[10855px] '>
+          
+          </div>
+        </div>
 
-        <div className="absolute top-0 left-0 w-full">
+       <div className="absolute top-0 left-0 w-full">
           <Navbar />
           <Content/>
         </div>
-      </div>
 
-      <div className='bg-[#1B2316] w-full h-screen over'>
-        
-      </div>
     </div>
     </> 
   )

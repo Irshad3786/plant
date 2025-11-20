@@ -2,8 +2,62 @@ import React from 'react'
 import CardOne from './CardOne'
 import CardTwo from './CardTwo'
 import PlantCard from './PlantCards/PlantCard'
+import PlantCardOne from './TopSellingPlants/PlantCard'
+import Card from './TestimonialCard/Card'
 
 function Content() {
+
+    const plantsData = [
+  {
+    id: 1,
+    name: "Aglaonema plant",
+    description:
+      "The Aglaonema plant, commonly known as Chinese Evergreen known for its attractive foliage and ease of care",
+    price: 300,
+    image: "/firstplant.png"
+  },
+  {
+    id: 2,
+    name: "Plantain Lilies",
+    description:
+      "Hostas are primarily grown for their lush, decorative leaves, which come in a wide variety of shapes, sizes.",
+    price: 380,
+    image: "./plant02.png"
+  },
+  {
+    id: 3,
+    name: "Cactus",
+    description:
+      "It is known for their ability to thrive in arid environments",
+    price: 259,
+    image: "./plant03.png"
+  },
+  {
+    id: 4,
+    name: "Swiss cheese Plant",
+    description:
+      "It is a popular tropical houseplant known for its distinctive, perforated leaves",
+    price: 400,
+    image: "./plant04.png"
+  },
+  {
+    id: 5,
+    name: "Sansevieria plant",
+    description:
+      "It is a popular indoor plant admired for its striking appearance and low-maintenance nature.",
+    price: 450,
+    image: "./plant05.png"
+  },
+  {
+    id: 6,
+    name: "Agave plant",
+    description:
+      "The Agave plant is a genus of succulent plants known for their striking rosette of thick, fleshy leaves.",
+    price: 359,
+    image: "./plant06.png"
+  }
+];
+
   return (
     <div>
         <div className='md:flex md:justify-between '>
@@ -125,8 +179,113 @@ function Content() {
                     image="/planttwo.png"
                     />
                 </div>
+
             </div>
+            <div className='flex justify-center items-center lg:mt-20'>
+                <div className='flex relative'>
+                    <div className='pt-3 absolute lg:pt-5'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 66" fill="none">
+                        <path opacity="0.5" d="M2.5 0V43.5C2.5 54.5457 11.4543 63.5 22.5 63.5H64"
+                            stroke="url(#grad)" stroke-width="5"/>
+                        <defs>
+                            <linearGradient id="grad" x1="0" y1="2.5" x2="68.5" y2="71.5" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FBD300"/>
+                            <stop offset="1" stop-color="white"/>
+                            </linearGradient>
+                        </defs>
+                        </svg>
+
+                    </div>
+                    <h1 className='text-white text-2xl font-semibold px-2 py-2 lg:text-4xl'>Our Top Selling Plants</h1>
+                    <div className='pt-2 absolute right-0 lg:top-1'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 66" fill="none">
+                        <path opacity="0.5" d="M61.5 65.5V22.5C61.5 11.4543 52.5457 2.50001 41.5 2.50001L1.09971e-05 2.50001" stroke="url(#paint0_linear_11_52)" stroke-width="5"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_11_52" x1="0.500012" y1="2.50001" x2="68.5" y2="71.5" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FBD300"/>
+                        <stop offset="1" stop-color="white"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-6 w-full mt-36">
+
+                {plantsData.map((ele) => (
+                    <PlantCardOne
+                    key={ele.id}
+                    image={ele.image}
+                    title={ele.name}
+                    description={ele.description}
+                    price={ele.price}
+                    className="w-[300px]"
+                    />
+                ))}
+
+            </div>
+
+
+
+            <div className='flex justify-center items-center lg:mt-20 lg:mb-20 mb-11'>
+                <div className='flex relative'>
+                    <div className='pt-3 absolute lg:pt-5'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 66" fill="none">
+                        <path opacity="0.5" d="M2.5 0V43.5C2.5 54.5457 11.4543 63.5 22.5 63.5H64"
+                            stroke="url(#grad)" stroke-width="5"/>
+                        <defs>
+                            <linearGradient id="grad" x1="0" y1="2.5" x2="68.5" y2="71.5" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#FBD300"/>
+                            <stop offset="1" stop-color="white"/>
+                            </linearGradient>
+                        </defs>
+                        </svg>
+
+                    </div>
+                    <h1 className='text-white text-2xl font-semibold px-2 py-2 lg:text-4xl'>Customer Review</h1>
+                    <div className='pt-2 absolute right-0 lg:top-1'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 66" fill="none">
+                        <path opacity="0.5" d="M61.5 65.5V22.5C61.5 11.4543 52.5457 2.50001 41.5 2.50001L1.09971e-05 2.50001" stroke="url(#paint0_linear_11_52)" stroke-width="5"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_11_52" x1="0.500012" y1="2.50001" x2="68.5" y2="71.5" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#FBD300"/>
+                        <stop offset="1" stop-color="white"/>
+                        </linearGradient>
+                        </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-9 w-full lg:gap-20 ">
+                <Card
+                name="Shelly Russel"
+                image="/person01.png"
+                rating={4.5}
+                text="Just got my hands on some absolutely awesome plants, and I couldn’t be happier!"
+                
+                />
+
+                <Card
+                name="Lula Rolfson"
+                image="/person02.jpg"
+                rating={4.5}
+                text="Each one has its own unique charm and personality, and they’ve already started brightening up my space. The vibrant colors and fresh greenery make such a huge difference in my home."
+                />
+
+                <Card
+                name="Carol Huels"
+                image="/person03.png"
+                rating={4.5}
+                text="It's like bringing a little piece of nature indoors. Definitely worth the investment—my plant collection has never looked better!"
+                />
+            </div>
+
+
+            
         </div>
+        
     </div>
   )
 }
