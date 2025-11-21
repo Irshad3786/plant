@@ -8,7 +8,7 @@ function Home() {
     <div>
         <div className='relative'>
           <img src="./background.jpg" alt="" className="w-full h-auto" />
-          <div className='bg-[#1B2316] w-full min-h-[10855px] '>
+          <div className='bg-[#1B2316] w-full min-h-[3355px] '>
           
           </div>
         </div>

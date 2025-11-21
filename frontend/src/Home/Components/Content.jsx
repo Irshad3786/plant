@@ -4,6 +4,8 @@ import CardTwo from './CardTwo'
 import PlantCard from './PlantCards/PlantCard'
 import PlantCardOne from './TopSellingPlants/PlantCard'
 import Card from './TestimonialCard/Card'
+import CardO2 from './OurBestO2/CardO2'
+import Footer from './Footer'
 
 function Content() {
 
@@ -59,7 +61,7 @@ function Content() {
 ];
 
   return (
-    <div>
+    <div >
         <div className='md:flex md:justify-between '>
             <div className='text-white font-Inter px-5 md:pt-12 lg:pt-24'> 
                 <h1 className='text-4xl font-semibold opacity-75 lg:text-8xl'>Earth’s Exhale</h1>
@@ -211,7 +213,7 @@ function Content() {
                 </div>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-6 w-full mt-36">
+            <div className="flex flex-wrap justify-center gap-6 w-full mt-36 bg-[#1B2316]">
 
                 {plantsData.map((ele) => (
                     <PlantCardOne
@@ -228,9 +230,9 @@ function Content() {
 
 
 
-            <div className='flex justify-center items-center lg:mt-20 lg:mb-20 mb-11'>
+            <div className='flex justify-center items-center lg:mt-20 lg:pb-20 pb-11 bg-[#1B2316]'>
                 <div className='flex relative'>
-                    <div className='pt-3 absolute lg:pt-5'>
+                    <div className='pt-3 absolute lg:pt-5 '>
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 66" fill="none">
                         <path opacity="0.5" d="M2.5 0V43.5C2.5 54.5457 11.4543 63.5 22.5 63.5H64"
                             stroke="url(#grad)" stroke-width="5"/>
@@ -258,7 +260,7 @@ function Content() {
                 </div>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-9 w-full lg:gap-20 ">
+            <div className="flex flex-wrap justify-center gap-9 w-full lg:gap-20 bg-[#1B2316]">
                 <Card
                 name="Shelly Russel"
                 image="/person01.png"
@@ -281,6 +283,98 @@ function Content() {
                 text="It's like bringing a little piece of nature indoors. Definitely worth the investment—my plant collection has never looked better!"
                 />
             </div>
+            <div className='flex justify-center items-center lg:mt-20 lg:pb-20 pb-11 bg-[#1B2316]'>
+                <div className='flex relative'>
+                    <div className='pt-4 lg:pt-6 absolute lg:right-44 right-28'>
+                        <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="36"
+                    height="36"
+                    viewBox="0 0 74 74"
+                    fill="none"
+                    >
+                    <path
+                        d="M2.5 2.5L2.5 48.5C2.5 61.2026 12.7975 71.5 25.5 71.5H71"
+                        stroke="url(#paint0_linear_11_186)"
+                        strokeWidth="5"
+                        strokeLinecap="round"
+                    />
+                    <defs>
+                        <linearGradient
+                        id="paint0_linear_11_186"
+                        x1="2"
+                        y1="0.5"
+                        x2="71"
+                        y2="71.5"
+                        gradientUnits="userSpaceOnUse"
+                        >
+                        <stop stopColor="#55B000" />
+                        <stop offset="0.500917" stopColor="white" stopOpacity="0.156606" />
+                        <stop offset="1" stopColor="#50790B" />
+                        </linearGradient>
+                    </defs>
+                    </svg>
+
+                    </div>
+                    <h1 className='text-white text-2xl font-semibold py-2 lg:text-4xl'>Our Best o2</h1>
+                    <div className='absolute lg:left-44 left-28 '>
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 74 74"
+                        fill="none"
+                        >
+                        <path
+                            d="M71 71.5L71 25.5C71 12.7974 60.7025 2.5 48 2.5L2.49999 2.50001"
+                            stroke="url(#paint0_linear_11_185)"
+                            strokeWidth="5"
+                            strokeLinecap="round"
+                        />
+                        <defs>
+                            <linearGradient
+                            id="paint0_linear_11_185"
+                            x1="71.5"
+                            y1="73.5"
+                            x2="2.5"
+                            y2="2.5"
+                            gradientUnits="userSpaceOnUse"
+                            >
+                            <stop stopColor="#55B000" />
+                            <stop offset="0.500917" stopColor="white" stopOpacity="0.156606" />
+                            <stop offset="1" stopColor="#50790B" />
+                            </linearGradient>
+                        </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div className='flex justify-center items-center pt-2 px-2 lg:px-9 sm:pt-14 bg-[#1B2316]'>
+
+                <CardO2
+                image="/firstplant.png"
+                title="We Have Small And Best O2 Plants Collection’s"
+                description={`Oxygen-producing plants, often referred to as O2 plants, are those that release oxygen into the atmosphere through the process of photosynthesis.
+
+                Many plants can help filter out pollutants and toxins from the air, such as formaldehyde, benzene, and trichloroethylene. This makes the air cleaner and healthier to breathe.
+                `}
+
+                buttonText="Explore"
+                page="01/04"
+                onPrev={() => console.log('prev')}
+                onNext={() => console.log('next')}
+                />
+            </div>
+
+
+            <div className='flex justify-center items-center md:py-8 lg:py-14 bg-[#1B2316]'>
+                <svg class="opacity-80 w-4 h-4 lg:w-10 lg:h-10" viewBox="0 0 60 12" xmlns="http://www.w3.org/2000/svg" fill="none"><rect x="0" y="2" width="24" height="8" rx="4" fill="white"></rect><circle cx="36" cy="6" r="6" fill="white"></circle><circle cx="54" cy="6" r="6" fill="white"></circle></svg>
+            </div>
+
+
+
+            <Footer/>
 
 
             
