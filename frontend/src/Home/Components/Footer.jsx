@@ -8,7 +8,7 @@ function Footer() {
         <div>
           <div className="flex items-center gap-2">
             <img src="./plant.png" alt="logo" className="w-12 h-12 lg:w-14 lg:h-14" />
-            <h2 className="font-extrabold font-Inter opacity-75 text-2xl sm:text-3xl md:text-4xl">
+            <h2 className="font-extrabold font-Inter opacity-75 text-2xl sm:text-3xl md:text-2xl ">
               FloraVision.
             </h2>
           </div>
