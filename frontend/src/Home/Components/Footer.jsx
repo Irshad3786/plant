@@ -5,10 +5,9 @@ function Footer() {
     <footer className="bg-[#1B2316] text-white px-6 md:px-16 py-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
 
-        {/* Left Section */}
         <div>
           <div className="flex items-center gap-2">
-            <img src="./plant.png" alt="logo" className="w-10 h-10" />
+            <img src="./plant.png" alt="logo" className="w-12 h-12 lg:w-14 lg:h-14" />
             <h2 className="font-extrabold font-Inter opacity-75 text-2xl sm:text-3xl md:text-4xl">
               FloraVision.
             </h2>
@@ -30,7 +29,6 @@ function Footer() {
           </div>
         </div>
 
-        {/* Quick Links */}
         <div>
           <h2 className="text-lg sm:text-xl md:text-2xl font-semibold">
             Quick Link's
@@ -44,7 +42,6 @@ function Footer() {
           </ul>
         </div>
 
-        {/* Subscribe Section */}
         <div>
           <h2 className="text-lg sm:text-xl md:text-2xl font-semibold ">
             For Every Update.

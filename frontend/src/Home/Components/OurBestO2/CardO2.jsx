@@ -15,7 +15,6 @@ function CardO2({
         origin-center 
         w-full flex justify-center">
 
-      {/* SVG Border */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="w-[320px] h-[290px] sm:w-[450px] sm:h-[300px] lg:w-[2980px] lg:h-[655px] md:w-[1880px] md:h-[355px]"
@@ -49,7 +48,6 @@ function CardO2({
         </defs>
       </svg>
 
-      {/* CONTENT */}
       <div
         className="
         absolute inset-0 
@@ -60,7 +58,7 @@ function CardO2({
         md:flex-row
       "
       >
-        {/* Image */}
+     
         <div className="relative top-0">
         <img
           src={image}
@@ -69,21 +67,23 @@ function CardO2({
         />
         </div>
         <div className="md:flex md:flex-col md:gap-8">
-        <h2 className="text-[10px] sm:text-lg lg:text-3xl md:text-base font-semibold mt-1 text-white ">
+         <h2 className="text-[10px] sm:text-lg lg:text-3xl md:text-base font-semibold mt-1 text-white/70 text-start pl-2 lg:pl-0">
           {title}
         </h2>
 
-        <p className="text-white/80 lg:text-xl font-semibold  md:whitespace-pre-line lg:whitespace-pre-line text-[8px] md:text-[13px] md:pr-16 lg:pr-3 sm:text-[12px] text-center px-2 mt-0 w-[250px] sm:w-[420px] md:w-[390px] lg:w-[600px]">
-          {description}
-        </p>
 
-        <div className="flex gap-6 sm:gap-40 md:gap-44 lg:gap-64">
+          <p className="text-white/80 lg:text-xl font-semibold md:whitespace-pre-line lg:whitespace-pre-line text-[8px] md:text-[13px] md:pr-16 lg:pr-3 sm:text-[12px] text-start px-2 mt-0 w-[250px] sm:w-[420px] md:w-[390px] lg:w-[600px]">
+              {description}
+            </p>
+
+
+        <div className="flex gap-32 sm:gap-40 md:gap-44 lg:gap-64 pl-2 lg:pl-0">
         <button className="px-2 py-1 mt-1 border rounded-md text-zinc-300 hover:bg-white/10 transition text-[8px] sm:text-xs lg:text-[25px] lg:py-4
          lg:px-14">
           {buttonText}
         </button>
 
-        {/* Navigation */}
+     
         <div className="flex items-center justify-center gap-6 pt-0">
           <button
             onClick={onPrev}
@@ -92,7 +92,10 @@ function CardO2({
             &#8249;
           </button>
 
-          <span className="text-white/80 text-[8px] sm:text-xs lg:text-xl">{page}</span>
+          <span className="text-white/80 text-[8px] sm:text-xs lg:text-xl">
+            <span>01/</span>
+            <span className="text-[6px] sm:text-[10px] lg:text-base">04</span>
+          </span>
 
           <button
             onClick={onNext}

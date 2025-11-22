@@ -10,7 +10,7 @@ function PlantCard({ reverse = false,
   ...props }) {
   return (
      <div className={`relative w-full ${className}`} {...props}>
-      {/* SVG Glass Background */}
+
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1619 526"
@@ -62,16 +62,16 @@ function PlantCard({ reverse = false,
         </defs>
       </svg>
 
-      {/* CONTENT */}
+
       <div
         className={`relative z-10 flex  
         ${reverse ? "flex-row-reverse" : "flex-row"}
         `}
       >
-        {/* IMAGE */}
+
         <img src={image} alt="" className="w-[50%] h-[80%] object-contain -mt-10 md:-mt-28 lg:-mt-36" />
 
-        {/* TEXT */}
+    
        <div className="w-[50%] text-white pl-5 flex justify-center flex-col lg:pl-20">
   <h2 className="text-[8px] font-semibold md:text-[16px] lg:text-[30px] ">{title}</h2>
 
@@ -79,7 +79,7 @@ function PlantCard({ reverse = false,
 
   <h3 className="text-[8px] font-semibold md:text-[16px] lg:text-[32px] lg:mt-4">Rs. {price}/-</h3>
 
-  {/* Button + Icon container */}
+
   <div className="flex items-center gap-2 lg:gap-3 lg:mt-2">
     <button className="w-fit px-4 py-1 md:px-6 md:py-2 text-[5px] md:text-[10px]  lg:text-[16px] md:mt-2 border border-white text-white rounded-md opacity-90">
       Buy Now
@@ -91,7 +91,7 @@ function PlantCard({ reverse = false,
       viewBox="0 0 80 80"
       fill="none"
     >
-      {/* Rounded Square */}
+  
       <rect
         x="2"
         y="2"
@@ -102,7 +102,7 @@ function PlantCard({ reverse = false,
         strokeWidth="3"
       />
 
-      {/* Centered Bag Icon */}
+
       <g transform="translate(21, 20) scale(1.6)">
         <path
           fill="#d0d1cf"

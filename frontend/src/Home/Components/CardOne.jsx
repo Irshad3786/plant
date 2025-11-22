@@ -5,7 +5,6 @@ function CardOne({ children, className = "" }) {
   return (
     <div className={`relative w-[200px] lg:w-[350px] h-[280px] ${className}`}>
 
-      {/* SVG Glass Background */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="absolute inset-0  h-fit w-[100%] "

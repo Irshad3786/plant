@@ -3,7 +3,6 @@ import React from 'react'
 function CardTwo({ children }) {
   return (
      <div className="relative w-[250px] h-[200px] lg:w-[350px] lg:h-[250px]">
-      {/* Glass SVG */}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="absolute inset-0 w-full h-full"
@@ -56,7 +55,6 @@ function CardTwo({ children }) {
       <div className="pt-4 relative z-20 left-4 top-10 lg:left-6">
         <img src="girl.png" className="w-8 h-8 lg:w-14 lg:h-14 rounded-full object-cover"/>
     </div>
-      {/* Children inserted here */}
       <div className="absolute inset-1 pt-6">
         {children}
       </div>

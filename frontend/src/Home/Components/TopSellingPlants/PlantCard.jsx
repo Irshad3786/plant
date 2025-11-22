@@ -4,7 +4,6 @@ function PlantCard({ image, title, description, price }) {
   return (
     <div className="relative w-[280px] lg:w-[380px] lg:h-[300px] h-[250px] flex items-center justify-center mb-40 mt-6">
 
-      {/* Glass SVG Background */}
       <svg
       xmlns="http://www.w3.org/2000/svg"
       width="549"
@@ -105,28 +104,28 @@ function PlantCard({ image, title, description, price }) {
       </defs>
     </svg>
 
-      {/* Content */}
+
       <div className="absolute  px-10 text-white w-full ">
 
-        {/* Plant Image */}
+
         <img
           src={image}
           className="w-25 mx-auto drop-shadow-xl -mt-36"
           alt={title}
         />
 
-        {/* Title */}
-        <h2 className="text-lg lg:text-xl font-normal text-white/70 pt-10">{title}</h2>
 
-        {/* Description */}
+        <h2 className="text-lg lg:text-2xl font-normal text-white/70 pt-10">{title}</h2>
+
+
         <p className="text-white/70 text-[13.2px] leading-1 mt-1">{description}</p>
 
-        {/* Price + Bag Icon */}
+
         <div className="flex justify-between items-center mt-1 pr-4">
 
-          <h3 className="text-lg font-normal text-white/70 lg:text-xl">Rs. {price}/-</h3>
+          <h3 className="text-lg font-normal text-white/70 lg:text-2xl">Rs. {price}/-</h3>
 
-          {/* Bag Icon SVG directly added */}
+
           <div className="cursor-pointer active:scale-95 transition">
             <svg
               xmlns="http://www.w3.org/2000/svg"
